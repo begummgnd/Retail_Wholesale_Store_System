@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link href="~/css/site.css" rel="stylesheet">
+<div class="text-center mt-2">
+    <h6 class="display-5">Hoş Geldiniz</h6>
+</div>
+
+<html class="index">
+<div class="container mt-4" style="text-align:center">
+
+    <div class="btn-group " style=" margin-top: 100px; height:70px">
+        <button type="button" class="btn btn-success">Hesap İşlemleri</button>
+        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+        </button>
+        <div class="dropdown-menu">
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" style="text-align:center" data-toggle="dropdown">
+                Kullanıcı İşlemleri
+            </button>
+
+            <div class="dropdown-item">
+                <a class="bg-light dropdown-item " href="/hesap/kullanıcı/ekle">Yeni Kullanıcı Ekle</a>
+                <a class="bg-light dropdown-item" href="/hesap/kullanıcı/liste">Kullanıcı Listesi (Güncelleme ve Silme İşlemleri İçin Seçiniz)</a>
+        
+            </div>
+
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split " style="text-align:center" data-toggle="dropdown">
+                Rol İşlemleri
+            </button>
+
+            <div class="dropdown-item">
+                <a class="bg-light dropdown-item" href="/hesap/rol/ekle">Yeni Rol Ekle</a>
+                <a class="bg-light dropdown-item" href="/hesap/rol/liste">Rol Listesi (Güncelleme ve Silme İşlemleri İçin Seçiniz)</a>
+   
+            </div>
+        </div>
+    </div>
+    <div class="btn-group" style="margin-top:100px; height:70px">
+        <button type="button" class="btn btn-danger">Personel İşlemleri</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+        </button>
+        <div class="dropdown-menu">
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" style="text-align:center" data-toggle="dropdown">
+                Kategori İşlemleri
+            </button>
+            <div class="dropdown-item">
+                <a class="bg-light dropdown-item " href="/personel/kategori/ekle">Yeni Kategori Ekle</a>
+                <a class="bg-light dropdown-item" href="/personel/kategori/liste">Kategori Listesi (Güncelleme ve Silme İşlemleri İçin Seçiniz)</a>
+        
+            </div>
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" style="text-align:center" data-toggle="dropdown">
+                Ürün İşlemleri
+            </button>
+            <div class="dropdown-item">
+                <a class="bg-light dropdown-item " href="/personel/urun/ekle">Yeni Ürün Ekle</a>
+                <a class="bg-light dropdown-item" href="/personel/urun/liste">Ürün Listesi (Güncelleme ve Silme İşlemleri İçin Seçiniz)</a>
+           
+            </div>
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" style="text-align:center" data-toggle="dropdown">
+                Marka İşlemleri
+            </button>
+            <div class="dropdown-item">
+                <a class="bg-light dropdown-item " href="/personel/marka/ekle">Yeni Marka Ekle</a>
+                <a class="bg-light dropdown-item" href="/personel/marka/liste">Marka Listesi (Güncelleme ve Silme İşlemleri İçin Seçiniz)</a>
+           
+            </div>
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" style="text-align:center" data-toggle="dropdown">
+                Stok İşlemleri
+            </button>
+            <div class="dropdown-item">
+                <a class="bg-light dropdown-item " href="/personel/stok/ekle">Yeni Stok Ekle</a>
+                <a class="bg-light dropdown-item" href="/personel/stok/liste">Stok Listesi (Güncelleme ve Silme İşlemleri İçin Seçiniz)</a>
+    
+            </div>
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" style="text-align:center" data-toggle="dropdown">
+                Satış İşlemleri
+            </button>
+            <div class="dropdown-item">
+                <a class="bg-light dropdown-item " href="/personel/satis/ekle">Yeni Satış Ekle</a>
+                <a class="bg-light dropdown-item" href="/personel/satis/liste">Satış Listesi (Güncelleme ve Silme İşlemleri İçin Seçiniz)</a>
+         
+            </div>
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" style="text-align:center" data-toggle="dropdown">
+                Satış Maddeleri İşlemleri
+            </button>
+            <div class="dropdown-item">
+                <a class="bg-light dropdown-item " href="/personel/satismaddeleri/ekle">Yeni Satış Maddeleri Ekle</a>
+                <a class="bg-light dropdown-item" href="/personel/satismaddeleri/liste">Satış Maddeleri Listesi (Güncelleme ve Silme İşlemleri İçin Seçiniz)</a>
+         
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+</html>

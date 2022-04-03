@@ -1,0 +1,59 @@
+﻿@model List<BakkalUygulamasi.entity.Data.Urun>
+<div class="w-100">
+    <div class="row">
+        <div class="com-md-12">
+            <h1 class="h3">Ürünler</h1>
+            <hr />
+            <a class="btn btn-primary btn-sm" href="/personel/urun/ekle">Ürun Ekle</a>
+            <table class="table table-bordered mt-3">
+                <thead>
+                    <tr>
+                        <td style="width:70px;">Id</td>
+                        <td style="width:170px">Ürün Adı</td>
+                        <td style="width:170px;">Ürün Barkodu</td>
+                        <td style="width:170px;">Ürün Üretim Tarihi</td>
+                        <td style="width:170px;">Ürün Tüketim Tarihi</td>
+                        <td style="width:170px;">Ürün Fiyatı</td>
+                        <td style="width:170px;">Ürün Ağırlığı</td>
+                        <td style="width:170px;">Ürün Rengi</td>
+                        <td style="width:170px;">Ürün Marka Id </td>
+                        <td style="width:170px;">Ürün Kategori Id</td>
+                        <td style="width:170px;">Ürün Stok Id</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.UrunId</td>
+                            <td>@item.UAdi</td>
+                            <td>@item.UBarkodu</td>
+                            <td>@item.UUretimTarihi</td>
+                            <td>@item.UTuketimTarihi</td>
+                            <td>@item.UFiyat</td>
+                            <td>@item.UAgirlik</td>
+                            <td>@item.URengi</td>
+                            <td>@item.MarkaId</td>
+                            <td>@item.KategoriId</td>
+                            <td>@item.StokId</td>
+                            <td>
+                                <a href="/personel/urun/guncelle/@item.UrunId" class="btn btn-primary btn-sm mr-2">Düzenle</a>
+
+                                <form action="/personel/urunsil" method="POST" style="display:inline">
+                                    <input type="hidden" name="urunId" value="@item.UrunId" />
+                                    <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+
+                                </form>
+                            
+                            </td>
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+           
+        </div>
+    </div>
+</div>

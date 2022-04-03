@@ -1,0 +1,54 @@
+﻿@model List<BakkalUygulamasi.entity.Data.SatisMaddeleri>
+<div class="w-100">
+    <div class="row">
+        <div class="com-md-12">
+            <h1 class="h3">Satış Maddeleri Listesi</h1>
+            <hr />
+            <a class="btn btn-primary btn-sm" href="/personel/satismaddeleri/ekle">Satış Maddeleri Ekle</a>
+            <table class="table table-bordered mt-3">
+                <thead>
+                    <tr>
+                        <td style="width:70px;">Id</td>
+                        <td style="width:170px">Miktar</td>
+                        <td style="width:170px;">Fiyat</td>
+                        <td style="width:170px;">İskonto</td>
+                        <td style="width:170px;">Satış Id</td>
+                        <td style="width:170px;">Ürün Id</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>@item.SmId</td>
+                        <td>@item.SiMiktar</td>
+                        <td>@item.SiFiyat</td>
+                        <td>@item.SiIskonto</td>
+                        <td>@item.SatisId</td>
+                        <td>@item.UrunId</td>
+                        <td>
+                            <a href="/personel/satismaddeleri/guncelle/@item.SmId" class="btn btn-primary btn-sm mr-2">Düzenle</a>
+
+                            <form action="/personel/satismaddelerisil" method="POST" style="display:inline">
+                                <input type="hidden" name="smId" value="@item.SmId" />
+                                <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+                            </form>
+                            <form action="/personel/fatura/yazdir" method="POST" style="display:inline">
+                                <input type="hidden" name="UrunId" value="@item.UrunId" />
+                                <input type="hidden" name="SatisId" value="@item.SatisId" />
+                                <input type="hidden" name="SmId" value="@item.SmId" />
+
+                                <button type="submit" class="btn btn-success btn-sm">Fatura Yazdır</button>
+                            </form>
+                        </td>
+                    </tr>
+                    }
+
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>

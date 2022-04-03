@@ -1,0 +1,52 @@
+﻿@model List<BakkalUygulamasi.entity.Data.Kullanici>
+<div class="w-100">
+    <div class="row">
+        <div class="com-md-12">
+            <h1 class="h3">Kullanıcılar</h1>
+            <hr />
+            <a class="btn btn-primary btn-sm" href="/hesap/kullanıcı/ekle">Kullanıcı Ekle</a>
+            <table class="table table-bordered mt-3">
+                <thead>
+                    <tr>
+                        <td style="width:70px;">Id</td>
+                        <td style="width:1000px">İsim</td>
+                        <td style="width:170px;">Soyisim</td>
+                        <td style="width:170px;">Kullanıcı Adı</td>
+                        <td style="width:170px;">Parola</td>
+                        <td style="width:170px;">Eposta</td>
+                        <td style="width:170px;">Telefon</td>
+                        <td style="width:170px;">Rol Id</td>
+            
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>@item.KullaniciId</td>
+                        <td>@item.KAdi</td>
+                        <td>@item.KSoyadi</td>
+                        <td>@item.KKullaniciadi</td>
+                        <td>@item.KParola</td>
+                        <td>@item.KEposta</td>
+                        <td>@item.KTelefon</td>
+                        <td>@item.RolId</td>
+                        <td>
+                            <a href="/hesap/kullanıcı/guncelle/@item.KullaniciId" class="btn btn-primary btn-sm mr-2">Düzenle</a>
+
+                            <form action="/hesap/kullanicisil" method="POST" style="display:inline">
+                                <input type="hidden" name="kullaniciId" value="@item.KullaniciId" />
+                                <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+                            </form>
+                        </td>
+                    </tr>
+                    }
+
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>

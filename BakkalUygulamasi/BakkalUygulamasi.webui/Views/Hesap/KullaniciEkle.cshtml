@@ -1,0 +1,31 @@
+﻿@model BakkalUygulamasi.entity.Data.Kullanici
+
+<!doctype html>
+<html>
+<head>
+    
+    <meta charset="utf-8" />
+    <link href="~/css/kayit.css" rel="stylesheet">
+   
+</head>
+<body>
+    <div id="kayitFormu">
+        <form asp-controller="Hesap" asp-action="KullaniciEkle" method="POST">
+            <h3><d1 class="text-success">KULLANICI KAYIT FORMU</d1></h3>
+            <img class="mb-4" src="~/img/kayit.png" alt="" height="100">
+
+            <input class="form-control" asp-for="@Model.KAdi" placeholder="İsim" />
+            <input class="form-control" asp-for="@Model.KSoyadi" placeholder="Soyisim" />
+            <input class="form-control" asp-for="@Model.KKullaniciadi" placeholder="Kullanıcı Adı" />
+            <input class="form-control" asp-for="@Model.KParola" placeholder="Parola" />
+            <input class="form-control" asp-for="@Model.KEposta" placeholder="E-Mail" />
+            <input class="form-control" asp-for="@Model.KTelefon" placeholder="Telefon Numarası" />
+            <input class="form-control" asp-for="@Model.RolId" placeholder="Rol Id" />
+            <button type="submit" class="btn btn-success">Kayıt Ol</button>
+        </form>
+
+    </div>
+
+
+</body>
+</html>

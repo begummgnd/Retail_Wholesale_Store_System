@@ -1,0 +1,44 @@
+﻿@model List<BakkalUygulamasi.entity.Data.Sati>
+<div class="w-100">
+    <div class="row">
+        <div class="com-md-12">
+            <h1 class="h3">Satış Listesi</h1>
+            <hr />
+            <a class="btn btn-primary btn-sm" href="/personel/satis/ekle">Satış Ekle</a>
+            <table class="table table-bordered mt-3">
+                <thead>
+                    <tr>
+                        <td style="width:70px;">Id</td>
+                        <td style="width:1000px">Satış Tarihi</td>
+                        <td style="width:170px;">Satış Durumu</td>
+                        <td style="width:170px;">Kullanıcı Id</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>@item.SatisId</td>
+                        <td>@item.STarih</td>
+                        <td>@item.SDurum</td>
+                        <td>@item.KullaniciId</td>
+
+                        <td>
+                            <a href="/personel/satis/guncelle/@item.SatisId" class="btn btn-primary btn-sm mr-2">Düzenle</a>
+
+                            <form action="/personel/satissil" method="POST" style="display:inline">
+                                <input type="hidden" name="satisId" value="@item.SatisId" />
+                                <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+                            </form>
+                        </td>
+                    </tr>
+                    }
+
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>

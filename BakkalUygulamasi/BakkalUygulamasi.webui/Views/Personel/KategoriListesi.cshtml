@@ -1,0 +1,40 @@
+﻿@model List<BakkalUygulamasi.entity.Data.Kategori>
+<div class="w-100">
+    <div class="row">
+        <div class="com-md-12">
+            <h1 class="h3">Kategoriler</h1>
+            <hr />
+            <a class="btn btn-primary btn-sm" href="/personel/kategori/ekle">Kategori Ekle</a>
+            <table class="table table-bordered mt-3">
+                <thead>
+                    <tr>
+                        <td style="width:70px;">Id</td>
+                        <td style="width:1000px">Kategori Adı</td>
+                        <td style="width:170px;"></td>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.KategoriId</td>
+                                <td>@item.KAdi</td>
+                                <td>
+                                    <a href="/personel/kategori/guncelle/@item.KategoriId" class="btn btn-primary btn-sm mr-2">Düzenle</a>
+
+                                    <form action="/personel/kategorisil" method="POST" style="display:inline">
+                                        <input type="hidden" name="kategoriId" value="@item.KategoriId" />
+                                        <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    
+                
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>

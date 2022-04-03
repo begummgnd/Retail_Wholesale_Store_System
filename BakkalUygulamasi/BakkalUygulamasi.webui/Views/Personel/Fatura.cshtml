@@ -1,0 +1,89 @@
+﻿@model BakkalUygulamasi.entity.Data.SatisMaddeleri
+<div class="row">
+    <h1 class="font-weight-light display-5 text-muted">Genel Satış Bilgileri</h1>
+</div>
+<hr>
+
+<table class="table table-bordered table-sm mb-3">
+    <thead style="background-color:#e6dc9d">
+        <tr>
+            <td style="width:170px;">Miktar</td>
+            <td style="width:170px">Fiyat</td>
+            <td style="width:170px;">İskonto</td>
+            <td style="width:170px;">Toplam Fiyat</td>
+        </tr>
+    </thead>
+    <tbody>
+       
+        <tr>
+
+            <td>@Model.SiMiktar</td>
+            <td>@Model.SiFiyat</td>
+            <td>@Model.SiIskonto</td>
+            <td>@Model.TotalFiyat()</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+<table class="table table-bordered table-sm mb-3">
+    <thead style="background-color:#e6dc9d">
+        <tr>
+            <td style="width:170px;">Satış Tarihi</td>
+            <td style="width:170px">Satış Durumu</td>
+            <td style="width:170px;">Satış Yapan Kullanıcı Id</td>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.Satis)
+        {
+            if (@item.SatisId == @Model.SatisId)
+            {
+                <tr>
+
+                    <td>@item.STarih</td>
+                    <td>@item.SDurum</td>
+                    <td>@item.KullaniciId</td>
+                </tr>
+            }
+
+        }
+    </tbody>
+</table>
+
+<table class="table table-bordered table-sm mb-3">
+    <thead style="background-color:#e6dc9d">
+        <tr>
+            <td style="width:170px;">Ürün Adı</td>
+            <td style="width:170px">Ürün Barkodu</td>
+            <td style="width:170px;">Ürün Üretim Tarihi</td>
+            <td style="width:170px;">Ürün Tüketim Tarihi</td>
+            <td style="width:170px;">Ürün Fiyatı</td>
+            <td style="width:170px;">Ürün Ağırlığı</td>
+            <td style="width:170px;">Ürün Rengi</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.Uruns)
+        {
+            if (@item.UrunId == @Model.UrunId)
+            {
+            <tr>
+
+                <td>@item.UAdi</td>
+                <td>@item.UBarkodu</td>
+                <td>@item.UUretimTarihi</td>
+                <td>@item.UTuketimTarihi</td>
+                <td>@item.UFiyat</td>
+                <td>@item.UAgirlik</td>
+                <td>@item.URengi</td>
+              
+            </tr>
+            }
+        }
+    </tbody>
+</table>
+  
+

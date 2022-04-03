@@ -1,0 +1,15 @@
+C:\Users\BGM\source\repos\BakkalUygulamasi\BakkalUygulamasi.entity\bin\Debug\net5.0\BakkalUygulamasi.entity.deps.json
+C:\Users\BGM\source\repos\BakkalUygulamasi\BakkalUygulamasi.entity\bin\Debug\net5.0\BakkalUygulamasi.entity.dll
+C:\Users\BGM\source\repos\BakkalUygulamasi\BakkalUygulamasi.entity\bin\Debug\net5.0\ref\BakkalUygulamasi.entity.dll
+C:\Users\BGM\source\repos\BakkalUygulamasi\BakkalUygulamasi.entity\bin\Debug\net5.0\BakkalUygulamasi.entity.pdb
+C:\Users\BGM\source\repos\BakkalUygulamasi\BakkalUygulamasi.entity\obj\Debug\net5.0\BakkalUygulamasi.entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BGM\source\repos\BakkalUygulamasi\BakkalUygulamasi.entity\obj\Debug\net5.0\BakkalUygulamasi.entity.AssemblyInfoInputs.cache
+C:\Users\BGM\source\repos\BakkalUygulamasi\BakkalUygulamasi.entity\obj\Debug\net5.0\BakkalUygulamasi.entity.AssemblyInfo.cs
+C:\Users\BGM\source\repos\BakkalUygulamasi\BakkalUygulamasi.entity\obj\Debug\net5.0\BakkalUygulamasi.entity.csproj.CoreCompileInputs.cache
+C:\Users\BGM\source\repos\BakkalUygulamasi\BakkalUygulamasi.entity\obj\Debug\net5.0\BakkalUygulamasi.entity.dll
+C:\Users\BGM\source\repos\BakkalUygulamasi\BakkalUygulamasi.entity\obj\Debug\net5.0\ref\BakkalUygulamasi.entity.dll
+C:\Users\BGM\source\repos\BakkalUygulamasi\BakkalUygulamasi.entity\obj\Debug\net5.0\BakkalUygulamasi.entity.pdb
+C:\Users\BGM\source\repos\BakkalUygulamasi\BakkalUygulamasi.entity\bin\Debug\net5.0\BakkalUygulamasi.entity.runtimeconfig.json
+C:\Users\BGM\source\repos\BakkalUygulamasi\BakkalUygulamasi.entity\bin\Debug\net5.0\BakkalUygulamasi.entity.runtimeconfig.dev.json
+C:\Users\BGM\source\repos\BakkalUygulamasi\BakkalUygulamasi.entity\obj\Debug\net5.0\BakkalUygulamasi.entity.genruntimeconfig.cache
+C:\Users\BGM\source\repos\BakkalUygulamasi\BakkalUygulamasi.entity\obj\Debug\net5.0\BakkalUygulamasi.entity.csprojAssemblyReference.cache

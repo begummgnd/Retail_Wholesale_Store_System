@@ -1,0 +1,43 @@
+﻿@model List<BakkalUygulamasi.entity.Data.Stok>
+<div class="w-100">
+    <div class="row">
+        <div class="com-md-12">
+            <h1 class="h3">Stoklar</h1>
+            <hr />
+            <a class="btn btn-primary btn-sm" href="/personel/stok/ekle">Stok Ekle</a>
+            <table class="table table-bordered mt-3">
+                <thead>
+                    <tr>
+                        <td style="width:70px;">Id</td>
+                        <td style="width:1000px">Stok Adedi</td>
+                        <td style="width:170px;">Stok Giriş Tarihi</td>
+                        <td style="width:170px;">Stok Bitiş Tarihi</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>@item.StokId</td>
+                        <td>@item.SAdedi</td>
+                        <td>@item.SGirisTarihi</td>
+                        <td>@item.SBitisTarihi</td>
+                        <td>
+                            <a href="/personel/stok/guncelle/@item.StokId" class="btn btn-primary btn-sm mr-2">Düzenle</a>
+
+                            <form action="/personel/stoksil" method="POST" style="display:inline">
+                                <input type="hidden" name="stokId" value="@item.StokId" />
+                                <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+                            </form>
+                        </td>
+                    </tr>
+                    }
+
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
