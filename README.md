@@ -1,4 +1,4 @@
-## Retail_Wholesale_Store_System
+## Retail Wholesale Store System
 
 
 Proje geliştirme süreci, Asp .Net Core ile gerçekleştirilmiştir. Veri tabanının sisteme entegresi SQL Server'da önceden hazırlanmış olan bir veri tabanı kullanılaraktan scaffolding ile gerceklestirilmistir.
