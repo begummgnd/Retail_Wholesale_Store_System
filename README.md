@@ -1,5 +1,6 @@
 ## Retail Wholesale Store System
 
+Proje perakende toptan satış uygulaması olup mağaza personelleri tarafından kullanılmak üzere tasarlanmış bir ürün satış web uygulamasıdır.
 
 Proje geliştirme süreci, Asp .Net Core ile gerçekleştirilmiştir. Veri tabanının sisteme entegresi SQL Server'da önceden hazırlanmış olan bir veri tabanı kullanılaraktan scaffolding ile gerceklestirilmistir.
 Scaffolding ile veri tabanının sisteme entegresi için komut satırından gerçekleştirmiş olduğum kodlar;
